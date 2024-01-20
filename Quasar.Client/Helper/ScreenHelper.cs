@@ -8,6 +8,18 @@ namespace Quasar.Client.Helper
 {
     public static class ScreenHelper
     {
+        /*
+         * 修复远程桌面分辨率问题
+         * 增加相关常量
+         */
+
+        private const int DESKTOPVERTRES = 117;
+        private const int DESKTOPHORZRES = 118;
+        private const int SM_CXSCREEN = 0;
+        private const int SM_CYSCREEN = 1;
+
+
+
         private const int SRCCOPY = 0x00CC0020;
         
         /*
