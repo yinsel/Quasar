@@ -84,17 +84,21 @@ namespace Quasar.Client
         /// </summary>
         private void InitializeNotifyicon()
         {
-            _notifyIcon.Text = "Quasar Client\nNo connection";
-            _notifyIcon.Visible = true;
-            try
-            {
-                _notifyIcon.Icon = Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-                _notifyIcon.Icon = SystemIcons.Application;
-            }
+            /*
+            * 隐藏任务栏图标
+            */
+            // _notifyIcon.Text = "Quasar Client\nNo connection";
+            // _notifyIcon.Visible = true;
+            // try
+            // {
+            //     _notifyIcon.Icon = Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location);
+            // }
+            // catch (Exception ex)
+            // {
+            //     Debug.WriteLine(ex);
+            //     _notifyIcon.Icon = SystemIcons.Application;
+            // }
+            return;
         }
 
         /// <summary>

