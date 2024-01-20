@@ -450,7 +450,7 @@ namespace Quasar.Server.Forms
             // 
             // numericUpDownDelay
             // 
-            this.numericUpDownDelay.Location = new System.Drawing.Point(276, 178);
+            this.numericUpDownDelay.Location = new System.Drawing.Point(276, 225);
             this.numericUpDownDelay.Maximum = new decimal(new int[] {
             600000,
             0,
@@ -469,7 +469,7 @@ namespace Quasar.Server.Forms
             // line3
             // 
             this.line3.LineAlignment = Quasar.Server.Controls.Line.Alignment.Horizontal;
-            this.line3.Location = new System.Drawing.Point(95, 159);
+            this.line3.Location = new System.Drawing.Point(95, 200);
             this.line3.Name = "line3";
             this.line3.Size = new System.Drawing.Size(290, 13);
             this.line3.TabIndex = 18;
@@ -478,7 +478,7 @@ namespace Quasar.Server.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 159);
+            this.label4.Location = new System.Drawing.Point(6, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 13);
             this.label4.TabIndex = 17;
@@ -525,7 +525,7 @@ namespace Quasar.Server.Forms
             // lblMS
             // 
             this.lblMS.AutoSize = true;
-            this.lblMS.Location = new System.Drawing.Point(356, 183);
+            this.lblMS.Location = new System.Drawing.Point(356, 225);
             this.lblMS.Name = "lblMS";
             this.lblMS.Size = new System.Drawing.Size(21, 13);
             this.lblMS.TabIndex = 11;
@@ -550,7 +550,7 @@ namespace Quasar.Server.Forms
             // lblDelay
             // 
             this.lblDelay.AutoSize = true;
-            this.lblDelay.Location = new System.Drawing.Point(17, 182);
+            this.lblDelay.Location = new System.Drawing.Point(17, 225);
             this.lblDelay.Name = "lblDelay";
             this.lblDelay.Size = new System.Drawing.Size(200, 13);
             this.lblDelay.TabIndex = 9;
